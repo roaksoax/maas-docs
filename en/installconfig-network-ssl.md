@@ -15,5 +15,4 @@ sudo maas-region local_config_set --maas-url https://localhost:5240/MAAS
 sudo systemctl restart maas-regiond
 ```
 
-Note that currently Apache is employed for redirecting TCP port 80 to 5240.
-This may be removed in future versions of MAAS.
+Note that MAAS binds on port 5240, and you would need configure the web server software to redirect to port 5240.
